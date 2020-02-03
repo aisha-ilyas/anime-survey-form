@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Survey Form</title>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <link href="https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond|Dosis|EB+Garamond&display=swap" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1 id="title">Anime/Manga Survey Form</h1>
+				<p id="description">This aims to collate the preferences of anime/manga lovers.<br>Thank you for taking time to fill this survey.</p>
+			</header>
+			<form id="survey-form">
+				<label id="name-label" for="name">Name</label>
+				<input 
+					type="text" 
+					name="name" 
+					id="name"
+					required="true"
+					placeholder="Godwin" 
+				/>
+				<label id="email-label" for="email">Email</label>
+				<input 
+					type="email" 
+					name="email" 
+					id="email" 
+					required="true"
+					placeholder="xyz@gmail.com"
+				/>
+				<label id="number-label" for="number">Age</label>
+				<input 
+					type="number" 
+					name="number" 
+					id="number" 
+					min="10" 
+					max="100"
+					placeholder="23" 
+				/>
+
+				<div>
+					<p>What type of anime/manga you do like watching/reading?</p>
+					<select name="genre" id="dropdown" required="true">
+						<option disabled="true" selected="true">Select a genre</option>
+						<option value="action">Action</option>
+						<option value="adventure">Adventure</option>
+						<option value="comedy">Comedy</option>
+						<option value="drama">Drama</option>
+						<option value="fantasy">Fantasy</option>
+						<option value="history">History</option>
+						<option value="mystery">Mystery</option>
+						<option value="psycho">Psychological</option>
+						<option value="romance">Romance/Ecchi</option>
+						<option value="sci-fi">Sci-Fi</option>
+						<option value="sliceoflife">Slice of life</option>
+					</select><br>
+				</div>
+
+				<div class="select-anime">
+					<p>Select the anime/manga you have read/watch below (Click all that apply)</p>
+					<label>
+						<input type="checkbox" name="watch/read" value="stone"/>Dr Stone
+					</label>
+					<label>
+						<input type="checkbox" name="watch/read" value="demonslayer"/>Demon Slayer: Kimestu no Yaiba
+					</label>
+					<label>
+						<input type="checkbox" name="watch/read" value="onepuch"/>One-Punch Man
+					</label>
+					<label>
+						<input type="checkbox" name="watch/read" value="myhero"/>My Hero Academia
+					</label>
+					<label>
+						<input type="checkbox" name="watch/read" value="caro_tue"/>Carole and Tuesday
+					</label>
+					<label>
+						<input type="checkbox" name="watch/read" value="neverland"/>The Promised Neverland
+					</label>
+					<label>
+						<input type="checkbox" name="watch/read" value="mobpsyco"/>Mob Psyco 100 II
+					</label>
+					<label>
+						<input type="checkbox" name="watch/read" value="bladeofimmortal"/>Blade of the Immortal
+					</label>
+					<label>
+						<input type="checkbox" name="watch/read" value="sololeveling"/>Solo Leveling
+					</label>
+					<label>
+						<input type="checkbox" name="watch/read" value="tog"/>Tower of God
+					</label>
+					<label>
+						<input type="checkbox" name="watch/read" value="noblesse"/>Noblesse
+					</label>
+					<label>
+						<input type="checkbox" name="watch/read" value="sevendeadly"/>Seven Deadly Sins
+					</label>
+					<label>
+						<input type="checkbox" name="watch/read" value="slime"/>I got reincarnated as a Slime
+					</label>
+				</div>
+
+				<div class="trans">
+					<p>In what way would you rather watch animes?</p>
+					<div class="subtrans">
+						<label>
+							<input type="radio" name="translation" value="sub">Subbed
+						</label>
+						<label>
+							<input type="radio" name="translation" value="dub">Dubbed
+						</label>
+						<label>
+							<input type="radio" name="translation" value="any">Don't mind
+						</label>
+					</div>	
+				</div>
+
+				<div>
+					<p>Enter the name(s) of anime/manga you are likely to watch/read in 2020</p>
+					<textarea 
+						id="others" 
+						rows="5" 
+						placeholder="Isekai Quartet 2...">
+					</textarea><br>
+				</div>
+
+				<div class="submit-btn">
+					<button type="submit" id="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	</body>
+</html>
